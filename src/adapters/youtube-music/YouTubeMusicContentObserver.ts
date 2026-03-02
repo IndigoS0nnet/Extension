@@ -74,7 +74,7 @@ export class YouTubeMusicObserver implements ContentObserver {
     });
 
     const likeButton = document.querySelector(
-      '.ytmusic-player-bar #button-shape-like'
+      '.ytmusic-player-bar #button-shape-like button'
     );
     if (likeButton) {
       songInfoObserver.observe(likeButton, {
@@ -83,7 +83,7 @@ export class YouTubeMusicObserver implements ContentObserver {
     }
 
     const dislikeButton = document.querySelector(
-      '.ytmusic-player-bar #button-shape-dislike'
+      '.ytmusic-player-bar #button-shape-dislike button'
     );
     if (dislikeButton) {
       songInfoObserver.observe(dislikeButton, {

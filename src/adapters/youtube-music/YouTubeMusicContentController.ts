@@ -154,14 +154,14 @@ export class YouTubeMusicContentController implements ContentController {
     const isLiked =
       (
         document.querySelector(
-          '.ytmusic-player-bar #button-shape-like'
+          '.ytmusic-player-bar #button-shape-like button'
         ) as HTMLElement
       )?.getAttribute('aria-pressed') === 'true';
 
     const isDisliked =
       (
         document.querySelector(
-          '.ytmusic-player-bar #button-shape-dislike'
+          '.ytmusic-player-bar #button-shape-dislike button'
         ) as HTMLElement
       )?.getAttribute('aria-pressed') === 'true';
     const durationText = document
